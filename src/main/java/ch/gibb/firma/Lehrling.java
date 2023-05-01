@@ -22,4 +22,8 @@ public class Lehrling extends Person{
         super.print();
         System.out.println(lehrjahr);
     }
+    @Override
+    public int berechneFerien(int alter) {
+        return 5;
+    }
 }

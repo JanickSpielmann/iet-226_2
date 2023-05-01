@@ -1,6 +1,6 @@
 package ch.gibb.firma;
 
-public class Person {
+public abstract class Person {
     protected String name;
     protected String vorname;
     protected int personalNummer;
@@ -40,6 +40,7 @@ public class Person {
         System.out.println(vorname);
         System.out.println(personalNummer);
 
-    };
+    }
+    public abstract int berechneFerien(int alter);
     }
 

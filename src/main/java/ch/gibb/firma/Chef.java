@@ -20,4 +20,14 @@ public class Chef extends Person {
         super.print();
         System.out.println(abteilung);
     }
+
+    @Override
+    public int berechneFerien(int alter) {
+        if (alter > 54) {
+            return 6;
+        } else if (alter > 44) {
+            return 5;
+        }
+        return 4;
+    }
 }

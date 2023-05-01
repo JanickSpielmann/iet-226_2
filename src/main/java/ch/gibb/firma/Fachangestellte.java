@@ -20,6 +20,16 @@ public class Fachangestellte extends Person {
     @Override
     public void print() {
         super.print();
+        System.out.println("Chef:");
         vorgesetzter.print();
+    }
+    @Override
+    public int berechneFerien(int alter) {
+        if (alter > 59) {
+            return 6;
+        } else if (alter > 49) {
+            return 5;
+        }
+        return 4;
     }
 }
