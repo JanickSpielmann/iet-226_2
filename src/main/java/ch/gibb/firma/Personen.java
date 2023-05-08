@@ -12,9 +12,8 @@ public class Personen {
         f.mittarbeiterHinzufugen(new Lehrling("Flück", "Marcel", 100, 3));
         f.mittarbeiterHinzufugen(new Fachangestellte("Gates","Bill",230, (Chef) f.getMitarbeiter(0)));
         for (Person person: f.getMitarbeiter()) {
-            person.print();
-            System.out.println(person.berechneFerien(55));
-
+            System.out.println(person.name + " hat "+ person.berechneFerien(55) + " Tage Ferienanspruch");
+            System.out.println();
         }
     }
 }
